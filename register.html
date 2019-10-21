@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>uGuitar - Sign Up</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="blue.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js>
+</script>
+<![endif]-->
+<script type="text/javascript">
+function toggleVisibility(a) 
+{
+	var control = document.getElementById(a)
+	if (control.style.visibility == "visible" || control.style.visibility == "") 
+	{
+		control.style.visibility = "hidden";
+	}
+	else 
+	{
+		control.style.visibility = "visible";
+	}
+}
+function toggleForm(button)
+{
+	if (button.value == "Show Membership Form")
+	{
+		button.value = "Hide";
+		document.getElementById("form").style.visibility = "visible";
+	}
+	else
+	{
+		button.value = "Show Membership Form";
+		document.getElementById("form").style.visibility = "hidden";
+	}
+}
+function swapStyleSheet(sheet)
+{
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+uGuitar
+<form>
+	<input type="button" name="Button1" value="Red" onclick="swapStyleSheet('red.css')">
+	<input type="button" name="Button2" value="Green" onclick="swapStyleSheet('green.css')">
+	<input type="button" name="Button3" value="Blue" onclick="swapStyleSheet('blue.css')">
+	<input type="button" name="Button4" value="Orange" onclick="swapStyleSheet('orange.css')">
+</form>
+</header>
+<nav>
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="lessons.html">Lessons</a></li>
+  <li><a href="utils.html">Utilities</a></li>
+  <li><a href="videos.html">Videos</a></li>
+  <li><a href="register.html">Register</a></li>
+ </ul>
+</nav>
+<p id="date" align="right"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<div id="rightcol">
+<main><br>
+<h3>Subscribe to uGuitar for Awesome Benefits!</h3>
+<p>By subscribing to uGuitar, you'll receive exclusive benefits that will aid you in furthering your guitar playing. Registering to our
+        members list will allow us to send you news and information as we receive it, always keeping you up to date on all the latest
+        and greatest guitar resources. You will essentially be creating a profile to use on our future message boards as well. Click the button
+        below to fill out a membership form today!</p><br>
+<table border="1">
+<caption>Perks of Membership</caption>
+  <tr>
+	<th>Non Member</th>
+	<th>Member</th>
+  </tr>
+  <tr>
+	<td>No exclusive emails</td>
+	<td>Exclusive emails with useful<br>
+	 information</td>
+  </tr>
+  <tr>
+	<td>Limited resources</td>
+	<td>Have access to new resources<br>
+	 as we receive them</td>
+  </tr>
+  <tr>
+	<td>Unable to post on message board</td>
+	<td>Creates a profile for member<br>
+	 to discuss guitar related topics<br>
+	 with other aspiring guitarists</td>
+  </tr>
+</table><br>
+<fieldset id="form" style="visibility: hidden">
+<legend>Registration Information (Required fields are marked with *)</legend>
+<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+<label for="fName">*First Name: </label>
+<input type="text" name="fName" id="fName" required="required"><br><br>
+<label for="lName">*Last Name: </label>
+<input type="text" name="lName" id="lName" required="required"><br><br>
+<label for="address1">Address Line 1: </label>
+<input type="text" name="address1" id="address1"><br><br>
+<label for="address2">Address Line 2: </label>
+<input type="text" name="address2" id="address2"><br><br>
+<label for="city">City: </label>
+<input type="text" name="city" id="city"><br><br>
+<label for="state">State: </label>
+<input type="text" name="state" id="state" maxlength="2"><br><br>
+<label for="zip">Zip: </label>
+<input type="text" name="zip" id="zip" maxlength="5"><br><br>
+<label for="myEmail">*Email: </label>
+<input type="email" name="myEmail" id="myEmail" required="required"><br><br>
+<label for="years">Years playing guitar: </label>
+<input type="text" name="years" id="years" maxlength="3"><br><br>
+<input id="mySubmit" type="submit" value="Sign Up">
+</form>
+</fieldset><br>
+<div id="button">
+<input type="button" id="btnToggle" value="Show Membership Form" onclick="toggleForm(this);" />
+</div>
+<embed type="application/x-shockwave-flash"
+       src="guitargif.swf" quality="high"
+       width="435" height="325">
+</main>
+<footer>
+Copyright &copy; 2015 uGuitar<br>
+<a href="william@skiles.com">william@skiles.com</a>
+</footer>
+</div>
+</div>
+</body>
+</html>
+ 

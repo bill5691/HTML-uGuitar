@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>uGuitar - Utilities</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="blue.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js>
+</script>
+<![endif]-->
+<script type="text/javascript">
+function swapStyleSheet(sheet)
+{
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+uGuitar
+<form>
+	<input type="button" name="Button1" value="Red" onclick="swapStyleSheet('red.css')">
+	<input type="button" name="Button2" value="Green" onclick="swapStyleSheet('green.css')">
+	<input type="button" name="Button3" value="Blue" onclick="swapStyleSheet('blue.css')">
+	<input type="button" name="Button4" value="Orange" onclick="swapStyleSheet('orange.css')">
+</form>
+</header>
+<nav>
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="lessons.html">Lessons</a></li>
+  <li><a href="utils.html">Utilities</a></li>
+  <li><a href="videos.html">Videos</a></li>
+  <li><a href="register.html">Register</a></li>
+ </ul>
+</nav>
+<p id="date" align="right"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<div id="rightcol">
+<main><br>
+<h3>Utilities</h3>
+<p>In order to improve your playing, practice is key. There are many utilities that are available to a guitarist that can be used to aid 
+        practicing. With these resources being readily available, it's almost essential that guitarists utilize them. On this page you will find
+        some of the most helpful tools you can use to make sure you get the most out of practice.</p><br>
+<table border="1">
+  <tr>
+	<th>Utility</th>
+	<th>Description</th>
+	<th>Link</th>
+  </tr>
+  <tr>
+	<th>Guitar Tuner</th>
+	<td>One of the most important parts of playing guitar is making sure your instrument is in key. If you're not in key, a number of things
+        	can go wrong. You won't match your bandmate's pitch on their instrument, you'll throw off the vocalist's singing, and worse of 
+        	all you'll teach your ear bad habits. With enough time playing, you'll develop your own sense of pitch and can hear what each
+        	note should sound like. Being out of key won't help with this! Here is an online tuner that you match the pitch of your strings to.
+       	 This will also help with hearing what the correct pitches sound like.</td>
+	<td><img src="tuner.jpg" height="125" width="125" alt="Tuner">
+	<a href="http://www2.fender.com/experience/online-guitar-tuner/">Fender Online Guitar Tuner</a><br></td>
+  </tr>
+  <tr>
+	<th>Metronome</th>
+	<td>Just like being in key, staying in time with your playing is vital. If you're not in time, your playing will just sound like a jumbled
+        	mess that has no direction. One of the most common and old-fashion ways to practice staying in time is by using a metronome.
+        	With the metronome, you will be able to hear a pulsing beat that you can use to keep your rhythm while you're playing. You 
+        	can also adjust the speed settings, so you can start slow and work your way up to faster speeds.</td>
+	<td><img src="metronome.jpg" height="150" width="100" alt="Metronome">
+	<a href="http://a.bestmetronome.com">Best Metronome</a></td>
+  </tr>
+</table>
+</main><br><br>
+<footer>
+Copyright &copy; 2015 uGuitar<br>
+<a href="william@skiles.com">william@skiles.com</a>
+</footer>
+</div>
+</div>
+</body>
+</html>
+ 

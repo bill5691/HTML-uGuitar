@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>uGuitar</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="blue.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js>
+</script>
+<![endif]-->
+<script type="text/javascript">
+function swapStyleSheet(sheet)
+{
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+<script>
+alert("Welcome to uGuitar!");
+</script>
+uGuitar
+<form>
+	<input type="button" name="Button1" value="Red" onclick="swapStyleSheet('red.css')">
+	<input type="button" name="Button2" value="Green" onclick="swapStyleSheet('green.css')">
+	<input type="button" name="Button3" value="Blue" onclick="swapStyleSheet('blue.css')">
+	<input type="button" name="Button4" value="Orange" onclick="swapStyleSheet('orange.css')">
+</form>
+</header>
+<nav>
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="lessons.html">Lessons</a></li>
+  <li><a href="utils.html">Utilities</a></li>
+  <li><a href="videos.html">Videos</a></li>
+  <li><a href="register.html">Register</a></li>
+ </ul>
+</nav>
+<p id="date" align="right"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<div id="rightcol">
+<main><br>
+<h3>Welcome to uGuitar!</h3>
+<img src="guitar.jpg" height="250" width="125" alt="Guitar">
+<p>Here at uGuitar, we provide all of the materials you need to enhance your guitar playing. We provide the most useful resources
+   to guitar players of any skill level in an easy to navigate website. Our list of resources include:</p><br>
+ <ul>
+  <li>Lessons</li> 
+  <li>Guitar tablatures</li>
+  <li>Useful tools to use while practicing</li>
+ </ul><br>
+<p>We hope that you find everything you need here, happy playing!</p><br>
+</main>
+<footer>
+Copyright &copy; 2015 uGuitar<br>
+<a href="william@skiles.com">william@skiles.com</a>
+</footer>
+</div>
+</div>
+</body>
+</html>
+ 

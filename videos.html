@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>uGuitar - Videos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="blue.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js>
+</script>
+<![endif]-->
+<script type="text/javascript">
+function swapStyleSheet(sheet)
+{
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+uGuitar
+<form>
+	<input type="button" name="Button1" value="Red" onclick="swapStyleSheet('red.css')">
+	<input type="button" name="Button2" value="Green" onclick="swapStyleSheet('green.css')">
+	<input type="button" name="Button3" value="Blue" onclick="swapStyleSheet('blue.css')">
+	<input type="button" name="Button4" value="Orange" onclick="swapStyleSheet('orange.css')">
+</form>
+</header>
+<nav>
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="lessons.html">Lessons</a></li>
+  <li><a href="utils.html">Utilities</a></li>
+  <li><a href="videos.html">Videos</a></li>
+  <li><a href="register.html">Register</a></li>
+ </ul>
+</nav>
+<p id="date" align="right"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<div id="rightcol">
+<main><br>
+<h3>Videos</h3>
+<p>On this page you will find videos of different exercises that will help accelerate your learning. For some people, simply reading is not enough for them to retain
+   the information they have learned. Some people learn easier by seeing exactly what they are supposed to do from someone that knows the technique. Use these videos 
+   to learn new exercises. Take advantage of pausing and rewinding the video to really get an understanding of what id being shown.</p><br>
+<p>Video 1: Pentatonic Scales</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4ZFqC9iTEbw" frameborder="0" allowfullscreen></iframe><br>
+<p>Video 2: Chord Practice</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IngEgjRe8kI" frameborder="0" allowfullscreen></iframe><br>
+<p>More videos will be added in the future!</p>
+</main><br><br>
+<footer>
+Copyright &copy; 2015 uGuitar<br>
+<a href="william@skiles.com">william@skiles.com</a>
+</footer>
+</div>
+</div>
+</body>
+</html>
